@@ -10,6 +10,18 @@ namespace CSPractice1
     {
         static void Main(string[] args)
         {
+            // 컨텍스트 키워드
+            // var abc = "Hello World";
+            int void = 10;
+            Console.WriteLine(void);
+
+            // 한 줄 주석
+            /* 
+             *
+             *	여러 줄 주석
+             */
+            /*** XML 주석 - 문서화할 때 사용 ***/
+
         }
     }
 }
