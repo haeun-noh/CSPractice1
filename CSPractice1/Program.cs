@@ -22,6 +22,11 @@ namespace CSPractice1
              */
             /*** XML 주석 - 문서화할 때 사용 ***/
 
+            // 출력
+            Console.WriteLine("Hello World");
+            Console.Write("뉴라인x(개행x)");
+
+
         }
     }
 }
