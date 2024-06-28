@@ -118,6 +118,11 @@ namespace CSPractice1
                     break;
             }
 
+            // #2 13-6. 삼항연산자
+            Console.WriteLine(number % 2 != 1 ? "짝수" : "홀수");
+
+
+
         }
     }
 }
