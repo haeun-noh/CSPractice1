@@ -6,6 +6,17 @@ using System.Threading.Tasks;
 
 namespace CSPractice1
 {
+    class MyMath
+    {
+        public static int classVar = 1;// 클래스
+        public int instanceVar = 2;// 인스턴스
+        public static int Abs(int input)
+        {
+            Console.WriteLine(classVar);
+            // Console.WriteLine(instanceVar); // 클래스 메서드에서 인스턴스 변수 접근 불가. 객체가 없기 때문에 사용할 수 없다. 
+            return (input >= 0 ) ? input : -input;
+        }
+    }
     class FirstClass
     {
     }
@@ -181,6 +192,9 @@ namespace CSPractice1
             // #4 21-5. 클래스 변수
             Console.WriteLine(Product.TAX_RATIO);
             // Console.WriteLine(p1.TAX_RATIO);// 인스턴스.클래스변수 로 접근하는 건 허용하지 않는다!!!
+
+            // #4 22-3. 클래스 메서드
+
         }
     }
 }
