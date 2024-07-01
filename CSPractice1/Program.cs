@@ -211,21 +211,8 @@ namespace CSPractice1
             Console.WriteLine(Product.TAX_RATIO);
             // Console.WriteLine(p1.TAX_RATIO);// 인스턴스.클래스변수 로 접근하는 건 허용하지 않는다!!!
 
-            // #5 22-3. 클래스 메서드
+            // #4 22-3. 클래스 메서드
 
-            // #5 22-4. 메서드 오버로딩
-            Console.WriteLine(MyMath.Abs(-10)); // Abs(int)
-            Console.WriteLine(MyMath.Abs(10.0)); // Abs(double)
-            Console.WriteLine(MyMath.Abs(-10L)); // Abs(double)
-            Console.WriteLine(MyMath.Abs(3.0f)); // Abs(double)
-
-            // #5 22-6. 생성자(+ 정적 생성자)
-            Console.WriteLine("첫 번째 위치");
-            // Sample의 정적 생성자가 딱 1번 호출됨
-            Console.WriteLine(Sample.value);
-            Console.WriteLine("두 번째 위치");
-            Sample sample = new Sample();
-            Console.WriteLine("세 번째 위치");
         }
     }
 }
