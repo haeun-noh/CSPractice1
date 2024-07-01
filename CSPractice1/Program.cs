@@ -286,6 +286,10 @@ namespace CSPractice1
                     if (cat!=null) cat.Meow(); // as를 사용할 경우 null이 아닌지에 대한 예외처리가 필요하다. 
                 }
             }
+
+            // #6 23-6. 상속의 생성자
+            Child child = new Child();// 부모 생성자가 먼저 호출되고 자식 생성자가 호출된다. 
+            Child child2 = new Child("input2");
         }
     }
 }
