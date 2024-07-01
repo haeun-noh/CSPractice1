@@ -62,6 +62,14 @@ namespace CSPractice1
     }
     internal class Program
     {
+        class Test
+        {
+            public int value = 10;
+        }
+        static void Change(Test t)
+        {
+            t.value = 20;
+        }
         class ThirdClass
         {
 
@@ -250,6 +258,13 @@ namespace CSPractice1
             b.width = 100;
             b.Height = 100;
             // b.Height = -100; // 예외 발생
+
+            // #5 22-9. 값 복사와 참조복사
+            Test test = new Test();
+            test.value = 100;// value: 100
+            Change(test);// value: 20
+            Console.WriteLine(test.value);// value: 20. 참조로 받았기 때문에 값이 바뀐다. 
+
 
         }
     }
