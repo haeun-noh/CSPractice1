@@ -6,6 +6,24 @@ using System.Threading.Tasks;
 
 namespace CSPractice1
 {
+    class Box
+    {
+        public int width { get; set; }
+        private int height;
+
+        public int Height
+        {
+            get { return height; }
+            set
+            {
+                if (value > 0)
+                {
+                    height = value;
+                }
+                else { throw new Exception(); }
+            }
+        }
+    }
     class Sample
     {
         public static int value;
@@ -226,6 +244,12 @@ namespace CSPractice1
             Console.WriteLine("세 번째 위치");
 
             // #5 22-7. 소멸자
+
+            // #5 22-8. 속성(Property)
+            Box b = new Box();
+            b.width = 100;
+            b.Height = 100;
+            // b.Height = -100; // 예외 발생
 
         }
     }
