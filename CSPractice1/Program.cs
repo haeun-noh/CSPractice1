@@ -265,7 +265,27 @@ namespace CSPractice1
             Change(test);// value: 20
             Console.WriteLine(test.value);// value: 20. 참조로 받았기 때문에 값이 바뀐다. 
 
-
+            // #6 23-4. is 키워드 (+as 키워드)
+            List<Animal> animals = new List<Animal>()
+            {
+                new Dog(), new Cat(), new Dog(), new Cat(), new Cat(),
+            };
+            foreach (var item in animals)
+            {
+                item.Eat();
+                item.Sleep();
+                if ( item is Dog )
+                {
+                    ((Dog)item).Bark();
+                    Console.WriteLine("Dog");
+                }
+                else if ( item is Cat )
+                {
+                    Console.WriteLine("Cat");
+                    var cat = item as Cat;
+                    if (cat!=null) cat.Meow(); // as를 사용할 경우 null이 아닌지에 대한 예외처리가 필요하다. 
+                }
+            }
         }
     }
 }
