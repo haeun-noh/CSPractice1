@@ -178,6 +178,9 @@ namespace CSPractice1
             Product p2 = new Product() { price = 100000, name = "아이폰"};// 이것이 생성자를 무리하게 많이 만들어야 하는 수고를 덜어줌
             Product p3 = new Product() { price = 100000 };// 일부만 초기화도 가능함
 
+            // #4 21-5. 클래스 변수
+            Console.WriteLine(Product.TAX_RATIO);
+            // Console.WriteLine(p1.TAX_RATIO);// 인스턴스.클래스변수 로 접근하는 건 허용하지 않는다!!!
         }
     }
 }
